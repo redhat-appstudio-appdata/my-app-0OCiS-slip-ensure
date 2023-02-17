@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-o572
+  namespace: mkovarik-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:68e920313d7120197e3316ac7c6f1388c2c142905677cde50819bd28e29cb0d2
+        name: my-python
+        resources: {}
+status: {}
